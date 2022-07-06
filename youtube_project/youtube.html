@@ -15,7 +15,7 @@
         margin-bottom: 0px;
       }
       .thumbnail {
-        width: 300px;
+        width: 100%;
         /* display: block; */
 
         /* height: 400px;
@@ -31,11 +31,10 @@
         display: block;
       }
 
-      .videoPreview {
-        width: 300px;
-        display: inline-block;
-        vertical-align: top;
-        margin-right: 10px;
+      .video-info-grid {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        column-gap: 8px;
       }
 
       .videoChannel {
@@ -71,6 +70,12 @@
       .videoAuthor {
         margin-bottom: 10px;
       }
+      .video-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 16px;
+        row-gap: 40px;
+      }
     </style>
   </head>
   <body>
@@ -80,53 +85,146 @@
       </div>
     </section>
     <section id="videosDisplay">
-      <div class="videoPreview">
-        <div class="thumbnailRow">
-          <img
-            class="thumbnail"
-            src="https://img.youtube.com/vi/yucTn222yhU/hqdefault.jpg"
-            alt="youtubeMiniature"
-          />
-        </div>
-        <div>
-          <div class="videoChannel">
+      <div class="video-grid">
+        <div class="videoPreview">
+          <div class="thumbnailRow">
             <img
-              class="profilePicture"
-              src="/channelPictures/channels4_profile.jpg"
-              alt="Profile picture"
+              class="thumbnail"
+              src="https://img.youtube.com/vi/yucTn222yhU/hqdefault.jpg"
+              alt="youtubeMiniature"
             />
           </div>
-          <div class="videoInfo">
-            <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
-            <p class="videoAuthor">Goste</p>
-            <p class="videoStats">360k views &#183; 2 years ago</p>
+          <div class="video-info-grid">
+            <div class="videoChannel">
+              <img
+                class="profilePicture"
+                src="/channelPictures/channels4_profile.jpg"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="videoInfo">
+              <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+              <p class="videoAuthor">Goste</p>
+              <p class="videoStats">360k views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="videoPreview">
+          <div class="thumbnailRow">
+            <img
+              class="thumbnail"
+              src="/thumbnails/jiminterview.jpg"
+              alt="youtubeMiniature"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="videoChannel">
+              <img
+                class="profilePicture"
+                src="/channelPictures/unnamed.jpg"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="videoInfo">
+              <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+              <p class="videoAuthor">Goste</p>
+              <p class="videoStats">360k views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="videoPreview">
+          <div class="thumbnailRow">
+            <img
+              class="thumbnail"
+              src="/thumbnails/jiminterview.jpg"
+              alt="youtubeMiniature"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="videoChannel">
+              <img
+                class="profilePicture"
+                src="/channelPictures/unnamed.jpg"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="videoInfo">
+              <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+              <p class="videoAuthor">Goste</p>
+              <p class="videoStats">360k views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="videoPreview">
+          <div class="thumbnailRow">
+            <img
+              class="thumbnail"
+              src="/thumbnails/jiminterview.jpg"
+              alt="youtubeMiniature"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="videoChannel">
+              <img
+                class="profilePicture"
+                src="/channelPictures/unnamed.jpg"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="videoInfo">
+              <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+              <p class="videoAuthor">Goste</p>
+              <p class="videoStats">360k views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="videoPreview">
+          <div class="thumbnailRow">
+            <img
+              class="thumbnail"
+              src="/thumbnails/jiminterview.jpg"
+              alt="youtubeMiniature"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="videoChannel">
+              <img
+                class="profilePicture"
+                src="/channelPictures/unnamed.jpg"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="videoInfo">
+              <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+              <p class="videoAuthor">Goste</p>
+              <p class="videoStats">360k views &#183; 2 years ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="videoPreview">
+          <div class="thumbnailRow">
+            <img
+              class="thumbnail"
+              src="/thumbnails/jiminterview.jpg"
+              alt="youtubeMiniature"
+            />
+          </div>
+          <div class="video-info-grid">
+            <div class="videoChannel">
+              <img
+                class="profilePicture"
+                src="/channelPictures/unnamed.jpg"
+                alt="Profile picture"
+              />
+            </div>
+            <div class="videoInfo">
+              <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+              <p class="videoAuthor">Goste</p>
+              <p class="videoStats">360k views &#183; 2 years ago</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="videoPreview">
-        <div class="videoPreview">
-            <div class="thumbnailRow">
-              <img
-                class="thumbnail"
-                src="/thumbnails/jiminterview.jpg"
-                alt="youtubeMiniature"
-              />
-            </div>
-            <div>
-              <div class="videoChannel">
-                <img
-                  class="profilePicture"
-                  src="/channelPictures/unnamed.jpg"
-                  alt="Profile picture"
-                />
-              </div>
-              <div class="videoInfo">
-                <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
-                <p class="videoAuthor">Goste</p>
-                <p class="videoStats">360k views &#183; 2 years ago</p>
-              </div>
-            </div>
-          </div>
     </section>
   </body>
 </html>
