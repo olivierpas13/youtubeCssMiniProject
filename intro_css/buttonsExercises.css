@@ -1,0 +1,97 @@
+.uberButton {
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: 470;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    transition: padding-top 1s, padding-bottom 1s, padding-left 1s,
+      padding-right 1s;
+  }
+  .uberButton:hover {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  .amazonButton {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: medium;
+    cursor: pointer;
+  }
+  .githubButton {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 11px;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .githubButton:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .bootstrapButton {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 8px;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .bootstrapButton1 {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 8px;
+    border-radius: 8px;
+    /* border: rgb(108, 117, 125); */
+    border-width: 2px;
+    font-size: medium;
+    cursor: pointer;
+    font-weight: 600;
+  }
