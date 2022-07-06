@@ -2,13 +2,21 @@
 <html>
   <head>
     <title>Youtube project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       p {
-        font-family: Arial;
+        font-family: Roboto, Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
       }
       .thumbnail {
         width: 300px;
-        display: block;
+        /* display: block; */
 
         /* height: 400px;
         object-fit: contain;
@@ -20,24 +28,105 @@
 
       .searchBar {
         font-size: medium;
+        display: block;
       }
 
-      .videoTitle {
+      .videoPreview {
         width: 300px;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 10px;
+      }
+
+      .videoChannel {
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+        /* margin-top: 10px; */
+      }
+      .videoInfo {
+        display: inline-block;
+        width: 220px;
+        margin-top: 0px;
+      }
+      .profilePicture {
+        width: 100%;
+        border-radius: 50px;
+      }
+      .thumbnailRow {
+        margin-bottom: 10px;
+      }
+      .videoTitle {
+        margin-top: 0px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 20px;
+      }
+      .videoAuthor,
+      .videoStats {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+      }
+      .videoAuthor {
+        margin-bottom: 10px;
       }
     </style>
   </head>
   <body>
-    <div>
-      <input class="searchBar" type="text" placeholder="Search" />
-      <img
-        class="thumbnail"
-        src="https://img.youtube.com/vi/yucTn222yhU/hqdefault.jpg"
-        alt="youtubeMiniature"
-      />
-      <p>Drake - Passionfruit (Sub Español)</p>
-      <p>Goste</p>
-      <p>360k views &#183; 2 years ago</p>
-    </div>
+    <section id="searchBar">
+      <div class="searchBar">
+        <input class="searchBar" type="text" placeholder="Search" />
+      </div>
+    </section>
+    <section id="videosDisplay">
+      <div class="videoPreview">
+        <div class="thumbnailRow">
+          <img
+            class="thumbnail"
+            src="https://img.youtube.com/vi/yucTn222yhU/hqdefault.jpg"
+            alt="youtubeMiniature"
+          />
+        </div>
+        <div>
+          <div class="videoChannel">
+            <img
+              class="profilePicture"
+              src="/channelPictures/channels4_profile.jpg"
+              alt="Profile picture"
+            />
+          </div>
+          <div class="videoInfo">
+            <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+            <p class="videoAuthor">Goste</p>
+            <p class="videoStats">360k views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <div class="videoPreview">
+        <div class="videoPreview">
+            <div class="thumbnailRow">
+              <img
+                class="thumbnail"
+                src="/thumbnails/jiminterview.jpg"
+                alt="youtubeMiniature"
+              />
+            </div>
+            <div>
+              <div class="videoChannel">
+                <img
+                  class="profilePicture"
+                  src="/channelPictures/unnamed.jpg"
+                  alt="Profile picture"
+                />
+              </div>
+              <div class="videoInfo">
+                <p class="videoTitle">Drake - Passionfruit (Sub Español)</p>
+                <p class="videoAuthor">Goste</p>
+                <p class="videoStats">360k views &#183; 2 years ago</p>
+              </div>
+            </div>
+          </div>
+    </section>
   </body>
 </html>
