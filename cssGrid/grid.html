@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Grid practice</title>
+  </head>
+  <body>
+    <div
+      style="
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 100px 100px;
+      "
+    >
+      <div style="background-color: lightsalmon">100px</div>
+      <div style="background-color: lightblue">100px</div>
+    </div>
+    <div
+      style="
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 100px 100px 300px;
+      "
+    >
+      <div style="background-color: lightsalmon">100px</div>
+      <div style="background-color: lightblue">
+        100px
+        <p>some random text</p>
+      </div>
+      <div style="background-color: lightslategrey">300px</div>
+    </div>
+    <div
+      style="
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 100px 100px 1fr;
+      "
+    >
+      <div style="background-color: lightsalmon">100px</div>
+      <div style="background-color: lightblue">
+        100px
+        <p>some random text</p>
+      </div>
+      <div style="background-color: lightslategrey">1fr</div>
+    </div>
+    <div
+      style="
+        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      "
+    >
+      <div style="background-color: lightsalmon">2fr</div>
+      <div style="background-color: lightblue">
+        1fr
+        <p>some random text</p>
+      </div>
+      <div style="background-color: lightslategrey">1fr</div>
+      <div style="background-color: rgb(142, 119, 153)">1.5fr</div>
+      <div style="background-color: rgb(142, 119, 153)">Another one</div>
+    </div>
+  </body>
+</html>
