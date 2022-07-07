@@ -25,9 +25,22 @@
         left: 0;
         bottom: 0;
         width: 80px;
+        z-index: 10;
       "
     >
       Side bar using fixed position but vertical
+      <div
+        style="
+          background-color: red;
+          height: 100px;
+          position: absolute;
+          top: 170px;
+          right: 0;
+          left: 2px;
+        "
+      >
+        Position fixed element(on the sidebar)
+      </div>
     </div>
     <div
       style="
@@ -39,8 +52,52 @@
     >
       div1
     </div>
-    <div style="background-color: lightcoral; width: 200px; height: 200px">
-      div2
+    <div
+      style="
+        background-color: lightcoral;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        z-index: -1;
+      "
+    >
+      div2 with position relative
+      <div
+        style="
+          background-color: red;
+          height: 70px;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 50px;
+        "
+      >
+        Position fixed element inside of a relative
+      </div>
+    </div>
+    <div
+      style="
+        background-color: red;
+        height: 30px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      "
+    >
+      Position fixed element(on the page)
+    </div>
+    <div
+      style="
+        background-color: red;
+        height: 30px;
+        position: absolute;
+        top: 95px;
+        right: 0;
+        z-index: -1;
+      "
+    >
+      Position fixed element(on the page) with z index of -1
     </div>
   </body>
 </html>
