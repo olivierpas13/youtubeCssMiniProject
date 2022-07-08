@@ -24,7 +24,7 @@
   }
 
   .profilePicture {
-    width: 100%;
+    width: 85%;
     border-radius: 50px;
   }
   .thumbnailRow {
@@ -37,7 +37,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
     width: 100%;
   }
   .videoAuthor,
@@ -55,16 +55,37 @@
     row-gap: 40px;
   }
 
+  @media (max-width: 750px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 751px) and (max-width: 999px){
+    .video-grid{
+      grid-template-columns:1fr 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1000px){
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
   .video-time{
-    font-family: Roboto, Arial;
     font-weight: 500;
     font-size: 12px;
     background-color: black;
     color: whitesmoke;
-    padding-top: 4px;
+    /* padding-top: 4px;
     padding-bottom: 4px;
     padding-left: 3px;
-    padding-right: 3px;
+    padding-right: 3px; We can also use padding in all directions 
+    padding can receive two values, the vertical paddin and the horizontal
+    or 4 values, starting from the top to the right clockwise
+    same for margin*/
+    padding: 4px;
     border-radius: 2px;
     position: absolute;
     bottom: 11px;

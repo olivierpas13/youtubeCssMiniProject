@@ -12,7 +12,6 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     z-index: 100;
-    
 }
 
 .left-section{
@@ -51,7 +50,6 @@
     width: 0;
 }
 .search-bar::placeholder{
-    font-family: Roboto, Arial;
     font-size: 15px;
 }
 
@@ -59,17 +57,46 @@
     height: 40px;
     width: 65px;
     background-color: rgb(240, 240, 240);
-    border-width: 1px;
+    /* border-width: 1px;
     border-style: solid;
     border-color: rgb(172, 169, 169);
+    Can be replaced by border: <width, style, color */
+    border: 1px solid rgb(192, 192, 192);
     margin: -1px;
     margin-right: 10px;
+}
 
+.search-button, .voice-search-button, .upload-icon-container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-button .tool-tip, .voice-search-button .tool-tip, 
+.upload-icon-container .tool-tip{
+    position: absolute;
+    background-color: gray;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tool-tip, .voice-search-button:hover .tool-tip,.upload-icon-container:hover .tool-tip{
+    opacity: 1;
 }
 
 .search-icon{
     height: 23px;
-    margin-top: 3px;
 }
 
 .voice-search-button{
@@ -81,8 +108,7 @@
 
 .voice-search-icon{
     height: 25px;
-    margin-top: 3px;
-    margin-left: 2px;
+
 }
 
 .right-section{
@@ -110,7 +136,6 @@
 }
 
 .notifications-count{
-    font-family: Roboto, Arial;
     font-size: 11px;
     position: absolute;
     padding-top: 2px;
@@ -128,3 +153,5 @@
     height: 34px;
     border-radius: 17px;
 }
+
+/* :) */

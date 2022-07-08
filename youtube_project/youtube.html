@@ -13,55 +13,72 @@
     <link rel="stylesheet" href="styles/video.css" />
     <link rel="stylesheet" href="styles/sidebar.css" />
   </head>
-  <body
-    style="
-      padding-bottom: 125px;
-      padding-top: 80px;
-      padding-left: 115px;
-      padding-right: 25px;
-    "
-  >
-    <section>
-      <div class="header">
-        <div class="left-section">
-          <img
-            class="hamburger-menu"
-            src="icons/hamburger-menu.svg"
-            alt="hamburger-menu"
-          />
-          <img
-            class="youtube-logo"
-            src="icons/youtube-logo.svg"
-            alt="hamburger-menu"
-          />
-        </div>
-        <div class="middle-section">
-          <input class="search-bar" type="text" placeholder="Search" />
-          <button class="search-button">
-            <img class="search-icon" src="icons/search.svg" alt="search-icon" />
-          </button>
-          <button class="voice-search-button">
-            <img
-              class="voice-search-icon"
-              src="icons/voice-search-icon.svg"
-              alt=""
-            />
-          </button>
-        </div>
-        <div class="right-section">
-          <img class="upload-icon" src="icons/upload.svg" />
-          <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
-          <div class="notifications-icon-container">
-            <img class="notifications-icon" src="icons/notifications.svg" />
-            <div class="notifications-count">3</div>
-          </div>
-          <img class="user-picture" src="channelPictures/me.jpg" />
-        </div>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img
+          class="hamburger-menu"
+          src="icons/hamburger-menu.svg"
+          alt="hamburger-menu"
+        />
+        <img
+          class="youtube-logo"
+          src="icons/youtube-logo.svg"
+          alt="hamburger-menu"
+        />
       </div>
-      <div class="sidebar">sidebar</div>
-    </section>
-    <section id="videosDisplay">
-      <div class="video-grid">
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg" alt="search-icon" />
+          <div class="tool-tip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg" />
+          <div class="tool-tip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg" />
+          <div class="tool-tip">Create</div>
+        </div>
+        <img class="youtube-apps-icon" src="icons/youtube-apps.svg" />
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg" />
+          <div class="notifications-count">3</div>
+        </div>
+        <img class="user-picture" src="channelPictures/me.jpg" />
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg" alt="Home icon" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="Explore icon" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="Subscriptions icon" />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="Originals icon" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="Youtube music" />
+        <div>Youtube music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="icons/library.svg" alt="Library icon" />
+        <div>Library</div>
+      </div>
+    </nav>
+    <main>
+      <section class="video-grid">
         <div class="videoPreview">
           <div class="thumbnailRow">
             <img
@@ -215,7 +232,8 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </body>
 </html>
+<!--:)-->
